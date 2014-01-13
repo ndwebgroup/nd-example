@@ -7,6 +7,7 @@ gem 'rails', '4.1.0.beta1'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
+gem 'sass-rails'
 gem 'foundation-rails'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes

@@ -2,18 +2,73 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <title><%= content_for?(:title) ? yield(:title) : "ND Foundation" %></title>
+    <meta name="description" content="This is the Meta Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
-
+    <meta name="apple-mobile-web-app-title" content="Short Name">
+    <meta name="application-name" content="Short Name">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/images/webclips/nd-webclip-57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/webclips/nd-webclip-72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/webclips/nd-webclip-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/webclips/nd-webclip-144.png">
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
   </head>
 
   <body>
-
-    <%= yield %>
+    <nav class="skip-links">
+      <ul>
+        <li><a href="#content" accesskey="C" title="Skip to content = C">Skip To Content</a></li>
+        <li><a href="#nav" accesskey="S" title="Skip to navigation = S">Skip To Navigation</a></li>
+      </ul>
+    </nav>
+    
+    <header id="header" role="banner" class="site-header">
+      <nav class="brandbar theme-bb-blue">
+        <ul>
+          <li class="dept-nd"><a href="http://www.nd.edu">University <i>of</i> Notre Dame</a></li>
+          <li class="dept dept-opac"><a href="http://opac.nd.edu">Office <i>of</i> Public Affairs <i>and</i> Communications</a></li>
+        </ul>
+      </nav>
+      <div class="titlebar theme-tb-gold {{ subhead }}">
+        <h1 class="site-title"><a href="/" accesskey="H">{{ this.site.name }}</a></h1>
+        <div class="header-util">
+          <form method="get" action="/search/" role="search" id="search" class="search-form"><input type="hidden" name="as_sitesearch" value="{{ this.site.domain }}"><input type="hidden" name="entqr" value="3"><label for="search-input">Search</label><input type="search" name="q" id="search-input" class="search-input" placeholder="Search"><button type="submit" class="search-button" data-icon="&#64;">Search</button></form>
+          <nav>
+            <ul>
+              <!-- <li><a href="/contact/">Contact</a></li> -->
+              <li class="menu-skip"><a href="#nav">Menu</a></li>
+              <li class="search-toggle"><a href="#search">Search</a></li>
+            </ul>
+          </nav>
+        </div><!-- .header-util -->
+      </div><!-- .titlebar -->
+      <nav id="topnav" class="topnav" role="navigation"></nav>
+    </header>
+    
+    <main id="content" class="site-content" role="main">
+      <%= yield %>
+    </main>
+  
+    <footer id="footer" class="site-footer row" role="contentinfo">
+      <div class="large-12 vcard">
+      <p class="copyright url fn org">
+        <a href="http://www.nd.edu/copyright/">Copyright</a> &copy; <%= Time.now.year %>
+        <a href="http://www.nd.edu" class="org">University of Notre Dame</a>
+        <a href="/" class="site-link url fn">ND Foundation</a>
+      </p>
+      <p class="contact-info adr">
+        <span class="address"><span class="street-address">502 Grace Hall</span>, <span class="locality">Notre Dame</span>, <span class="region" title="Indiana">IN</span> <span class="postal-code">46556</span></span>
+        <span class="tel"><span class="type">Phone</span> 574-631-5000</span>
+        <span class="tel fax"><span class="type">Fax</span> 574-631-5000</span>
+        <span class="email"><a href="mailto:email@nd.edu">email@nd.edu</a></span>
+      </p>
+      <a href="http://www.nd.edu" class="ndmark"><img src="//www.nd.edu/assets/images/marks/blue/ndmark300.png" alt="University of Notre Dame"></a>
+    </div>
+    </footer>
+    
     <%= javascript_include_tag "application" %>
   </body>
 </html>

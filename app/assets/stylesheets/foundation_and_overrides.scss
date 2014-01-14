@@ -1235,40 +1235,6 @@ h6 {font-size:1em;}
 @media screen,projection {
 
   /** Brand Bar **/
-  /** White Text **/
-  .dept-nd a   {width:301px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-white.png);}
-  .dept-arch a {width:287px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-arch-white.png);} /* School of Architecture */
-  .dept-athl a {width:288px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-athl-white.png);} /* Department of Athletics */
-  .dept-auxo a {width:254px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-auxo-white.png);} /* Auxiliary Operations */
-  .dept-buso a {width:357px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-buso-white.png);} /* Office of Business Operations */
-  .dept-cams a {width:195px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-cams-white.png);} /* Campus Services */
-  .dept-coal a {width:316px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-coal-white.png);} /* College of Arts and Letters */
-  .dept-cont a {width:274px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-cont-white.png);} /* Office of the Controller */
-  .dept-cosc a {width:218px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-cosc-white.png);} /* College of Science */
-  .dept-engr a {width:285px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-engr-white.png);} /* College of Engineering */
-  .dept-enrl a {width:253px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-enrl-white.png);} /* Enrollment Division */
-  .dept-evpo a {width:450px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-evpo-white.png);} /* Office of the Executive Vice President */
-  .dept-fdao a {width:381px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-fdao-white.png);} /* Facilities Design and Operations */
-  .dept-fyst a {width:252px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-fyst-white.png);} /* First Year of Studies */
-  .dept-genc a {width:321px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-genc-white.png);} /* Office of General Council */
-  .dept-grad a {width:244px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-grad-white.png);} /* The Graduate School */
-  .dept-hurs a {width:323px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-hurs-white.png);} /* Office of Human Resources */
-  .dept-invs a {width:231px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-invs-white.png);} /* Investment Office */
-  .dept-mcob a {width:352px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-mcob-white.png);} /* Mendoza College of Business */
-  .dept-meca a {width:565px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-meca-white.png);} /* Office of Mission Engagement and Church Affairs */
-  .dept-laws a {width:170px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-laws-white.png);} /* The Law School */
-  .dept-ooit a {width:444px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-ooit-white.png);} /* Office of Information Technologies */
-  .dept-opac a {width:525px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-opac-white.png);} /* Office of Public Affairs and Communications */
-  .dept-ores a {width:223px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-ores-white.png);} /* Office of Research */
-  .dept-pres a {width:258px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-pres-white.png);} /* Office of the President */
-  .dept-prov a {width:235px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-prov-white.png);} /* Office of the Provost */
-  .dept-staf a {width:313px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-staf-white.png);} /* Office of Student Affairs */
-  .dept-urel a {width:375px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-urel-white.png);} /* Office of University Relations */
-  .dept-vpor a {width:466px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-vpor-white.png);} /* Office of the Vice President for Research */
-  .dept-intr a {width:380px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-intr-white.png);} /* Office of Internationalization */
-  .dept-spir a {width:556px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-spir-white.png);} /* Office of Strategic Planning and Institutional Research */
-  .dept-acfs a {width:202px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-acfs-white.png);} /* Office of Finance */
-
   .brandbar.theme-bb-blue {border-bottom:1px solid #001227;
     @include box-shadow(0 1px #007ad9 inset, 0 -12px 3px -10px rgba(0,0,0,0.4) inset);
     background:#002b5b url(images/texture-checkers-lightblue50.png) 0 0 repeat;
@@ -1316,23 +1282,140 @@ h6 {font-size:1em;}
     @include box-shadow(0 1px rgba(255,255,255,.4) inset);
   }
 
+    /** White Text (Default) **/
+    .dept-nd a   {width:301px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-white.png);}
+    .dept-arch a {width:287px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-arch-white.png);} /* School of Architecture */
+    .dept-athl a {width:288px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-athl-white.png);} /* Department of Athletics */
+    .dept-auxo a {width:254px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-auxo-white.png);} /* Auxiliary Operations */
+    .dept-buso a {width:357px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-buso-white.png);} /* Office of Business Operations */
+    .dept-cams a {width:195px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-cams-white.png);} /* Campus Services */
+    .dept-coal a {width:316px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-coal-white.png);} /* College of Arts and Letters */
+    .dept-cont a {width:274px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-cont-white.png);} /* Office of the Controller */
+    .dept-cosc a {width:218px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-cosc-white.png);} /* College of Science */
+    .dept-engr a {width:285px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-engr-white.png);} /* College of Engineering */
+    .dept-enrl a {width:253px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-enrl-white.png);} /* Enrollment Division */
+    .dept-evpo a {width:450px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-evpo-white.png);} /* Office of the Executive Vice President */
+    .dept-fdao a {width:381px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-fdao-white.png);} /* Facilities Design and Operations */
+    .dept-fyst a {width:252px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-fyst-white.png);} /* First Year of Studies */
+    .dept-genc a {width:321px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-genc-white.png);} /* Office of General Council */
+    .dept-grad a {width:244px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-grad-white.png);} /* The Graduate School */
+    .dept-hurs a {width:323px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-hurs-white.png);} /* Office of Human Resources */
+    .dept-invs a {width:231px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-invs-white.png);} /* Investment Office */
+    .dept-mcob a {width:352px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-mcob-white.png);} /* Mendoza College of Business */
+    .dept-meca a {width:565px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-meca-white.png);} /* Office of Mission Engagement and Church Affairs */
+    .dept-laws a {width:170px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-laws-white.png);} /* The Law School */
+    .dept-ooit a {width:444px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-ooit-white.png);} /* Office of Information Technologies */
+    .dept-opac a {width:525px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-opac-white.png);} /* Office of Public Affairs and Communications */
+    .dept-ores a {width:223px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-ores-white.png);} /* Office of Research */
+    .dept-pres a {width:258px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-pres-white.png);} /* Office of the President */
+    .dept-prov a {width:235px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-prov-white.png);} /* Office of the Provost */
+    .dept-staf a {width:313px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-staf-white.png);} /* Office of Student Affairs */
+    .dept-urel a {width:375px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-urel-white.png);} /* Office of University Relations */
+    .dept-vpor a {width:466px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-vpor-white.png);} /* Office of the Vice President for Research */
+    .dept-intr a {width:380px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-intr-white.png);} /* Office of Internationalization */
+    .dept-spir a {width:556px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-spir-white.png);} /* Office of Strategic Planning and Institutional Research */
+    .dept-acfs a {width:202px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-acfs-white.png);} /* Office of Finance */
+  
     /** Blue Text **/
     .theme-bb-gold .dept-nd a   {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-blue.png);}
-    .theme-bb-gold .dept-opac a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-opac-blue.png);}
+    .theme-bb-gold .dept-arch a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-arch-blue.png);} /* School of Architecture */
+    .theme-bb-gold .dept-athl a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-athl-blue.png);} /* Department of Athletics */
+    .theme-bb-gold .dept-auxo a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-auxo-blue.png);} /* Auxiliary Operations */
+    .theme-bb-gold .dept-buso a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-buso-blue.png);} /* Office of Business Operations */
+    .theme-bb-gold .dept-cams a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cams-blue.png);} /* Campus Services */
+    .theme-bb-gold .dept-coal a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-coal-blue.png);} /* College of Arts and Letters */
+    .theme-bb-gold .dept-cont a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cont-blue.png);} /* Office of the Controller */
+    .theme-bb-gold .dept-cosc a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cosc-blue.png);} /* College of Science */
+    .theme-bb-gold .dept-engr a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-engr-blue.png);} /* College of Engineering */
+    .theme-bb-gold .dept-enrl a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-enrl-blue.png);} /* Enrollment Division */
+    .theme-bb-gold .dept-evpo a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-evpo-blue.png);} /* Office of the Executive Vice President */
+    .theme-bb-gold .dept-fdao a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-fdao-blue.png);} /* Facilities Design and Operations */
+    .theme-bb-gold .dept-fyst a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-fyst-blue.png);} /* First Year of Studies */
+    .theme-bb-gold .dept-genc a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-genc-blue.png);} /* Office of General Council */
+    .theme-bb-gold .dept-grad a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-grad-blue.png);} /* The Graduate School */
+    .theme-bb-gold .dept-hurs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-hurs-blue.png);} /* Office of Human Resources */
+    .theme-bb-gold .dept-invs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-invs-blue.png);} /* Investment Office */
+    .theme-bb-gold .dept-mcob a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-mcob-blue.png);} /* Mendoza College of Business */
+    .theme-bb-gold .dept-meca a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-meca-blue.png);} /* Office of Mission Engagement and Church Affairs */
+    .theme-bb-gold .dept-laws a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-laws-blue.png);} /* The Law School */
+    .theme-bb-gold .dept-ooit a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-ooit-blue.png);} /* Office of Information Technologies */
+    .theme-bb-gold .dept-opac a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-opac-blue.png);} /* Office of Public Affairs and Communications */
+    .theme-bb-gold .dept-ores a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-ores-blue.png);} /* Office of Research */
+    .theme-bb-gold .dept-pres a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-pres-blue.png);} /* Office of the President */
+    .theme-bb-gold .dept-prov a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-prov-blue.png);} /* Office of the Provost */
+    .theme-bb-gold .dept-staf a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-staf-blue.png);} /* Office of Student Affairs */
+    .theme-bb-gold .dept-urel a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-urel-blue.png);} /* Office of University Relations */
+    .theme-bb-gold .dept-vpor a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-vpor-blue.png);} /* Office of the Vice President for Research */
+    .theme-bb-gold .dept-intr a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-intr-blue.png);} /* Office of Internationalization */
+    .theme-bb-gold .dept-spir a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-spir-blue.png);} /* Office of Strategic Planning and Institutional Research */
+    .theme-bb-gold .dept-acfs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-acfs-blue.png);} /* Office of Finance */
 
     /** Gray Text **/
-    .theme-bb-lightgray .dept-nd a,
-    .theme-bb-mediumgray .dept-nd a   {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-gray.png);}
-    .theme-bb-lightgray .dept-opac a,
-    .theme-bb-mediumgray .dept-opac a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-opac-gray.png);}
-
-  /** Options include "-white", "-blue", and "-gray"; Update accordingly
-    Also see Section 4: Themes
-    Examples:
-    .theme-bb-gold .dept-nd a   {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-blue.png);}
     .theme-bb-lightgray .dept-nd a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-gray.png);}
-    .theme-bb-darkgray .dept-nd a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-white.png);}
-   **/
+    .theme-bb-lightgray .dept-arch a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-arch-gray.png);} /* School of Architecture */
+    .theme-bb-lightgray .dept-athl a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-athl-gray.png);} /* Department of Athletics */
+    .theme-bb-lightgray .dept-auxo a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-auxo-gray.png);} /* Auxiliary Operations */
+    .theme-bb-lightgray .dept-buso a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-buso-gray.png);} /* Office of Business Operations */
+    .theme-bb-lightgray .dept-cams a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cams-gray.png);} /* Campus Services */
+    .theme-bb-lightgray .dept-coal a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-coal-gray.png);} /* College of Arts and Letters */
+    .theme-bb-lightgray .dept-cont a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cont-gray.png);} /* Office of the Controller */
+    .theme-bb-lightgray .dept-cosc a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cosc-gray.png);} /* College of Science */
+    .theme-bb-lightgray .dept-engr a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-engr-gray.png);} /* College of Engineering */
+    .theme-bb-lightgray .dept-enrl a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-enrl-gray.png);} /* Enrollment Division */
+    .theme-bb-lightgray .dept-evpo a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-evpo-gray.png);} /* Office of the Executive Vice President */
+    .theme-bb-lightgray .dept-fdao a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-fdao-gray.png);} /* Facilities Design and Operations */
+    .theme-bb-lightgray .dept-fyst a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-fyst-gray.png);} /* First Year of Studies */
+    .theme-bb-lightgray .dept-genc a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-genc-gray.png);} /* Office of General Council */
+    .theme-bb-lightgray .dept-grad a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-grad-gray.png);} /* The Graduate School */
+    .theme-bb-lightgray .dept-hurs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-hurs-gray.png);} /* Office of Human Resources */
+    .theme-bb-lightgray .dept-invs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-invs-gray.png);} /* Investment Office */
+    .theme-bb-lightgray .dept-mcob a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-mcob-gray.png);} /* Mendoza College of Business */
+    .theme-bb-lightgray .dept-meca a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-meca-gray.png);} /* Office of Mission Engagement and Church Affairs */
+    .theme-bb-lightgray .dept-laws a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-laws-gray.png);} /* The Law School */
+    .theme-bb-lightgray .dept-ooit a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-ooit-gray.png);} /* Office of Information Technologies */
+    .theme-bb-lightgray .dept-opac a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-opac-gray.png);} /* Office of Public Affairs and Communications */
+    .theme-bb-lightgray .dept-ores a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-ores-gray.png);} /* Office of Research */
+    .theme-bb-lightgray .dept-pres a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-pres-gray.png);} /* Office of the President */
+    .theme-bb-lightgray .dept-prov a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-prov-gray.png);} /* Office of the Provost */
+    .theme-bb-lightgray .dept-staf a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-staf-gray.png);} /* Office of Student Affairs */
+    .theme-bb-lightgray .dept-urel a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-urel-gray.png);} /* Office of University Relations */
+    .theme-bb-lightgray .dept-vpor a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-vpor-gray.png);} /* Office of the Vice President for Research */
+    .theme-bb-lightgray .dept-intr a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-intr-gray.png);} /* Office of Internationalization */
+    .theme-bb-lightgray .dept-spir a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-spir-gray.png);} /* Office of Strategic Planning and Institutional Research */
+    .theme-bb-lightgray .dept-acfs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-acfs-gray.png);} /* Office of Finance */
+    
+    .theme-bb-mediumgray .dept-nd a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-gray.png);}
+    .theme-bb-mediumgray .dept-arch a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-arch-gray.png);} /* School of Architecture */
+    .theme-bb-mediumgray .dept-athl a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-athl-gray.png);} /* Department of Athletics */
+    .theme-bb-mediumgray .dept-auxo a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-auxo-gray.png);} /* Auxiliary Operations */
+    .theme-bb-mediumgray .dept-buso a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-buso-gray.png);} /* Office of Business Operations */
+    .theme-bb-mediumgray .dept-cams a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cams-gray.png);} /* Campus Services */
+    .theme-bb-mediumgray .dept-coal a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-coal-gray.png);} /* College of Arts and Letters */
+    .theme-bb-mediumgray .dept-cont a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cont-gray.png);} /* Office of the Controller */
+    .theme-bb-mediumgray .dept-cosc a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cosc-gray.png);} /* College of Science */
+    .theme-bb-mediumgray .dept-engr a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-engr-gray.png);} /* College of Engineering */
+    .theme-bb-mediumgray .dept-enrl a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-enrl-gray.png);} /* Enrollment Division */
+    .theme-bb-mediumgray .dept-evpo a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-evpo-gray.png);} /* Office of the Executive Vice President */
+    .theme-bb-mediumgray .dept-fdao a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-fdao-gray.png);} /* Facilities Design and Operations */
+    .theme-bb-mediumgray .dept-fyst a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-fyst-gray.png);} /* First Year of Studies */
+    .theme-bb-mediumgray .dept-genc a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-genc-gray.png);} /* Office of General Council */
+    .theme-bb-mediumgray .dept-grad a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-grad-gray.png);} /* The Graduate School */
+    .theme-bb-mediumgray .dept-hurs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-hurs-gray.png);} /* Office of Human Resources */
+    .theme-bb-mediumgray .dept-invs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-invs-gray.png);} /* Investment Office */
+    .theme-bb-mediumgray .dept-mcob a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-mcob-gray.png);} /* Mendoza College of Business */
+    .theme-bb-mediumgray .dept-meca a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-meca-gray.png);} /* Office of Mission Engagement and Church Affairs */
+    .theme-bb-mediumgray .dept-laws a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-laws-gray.png);} /* The Law School */
+    .theme-bb-mediumgray .dept-ooit a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-ooit-gray.png);} /* Office of Information Technologies */
+    .theme-bb-mediumgray .dept-opac a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-opac-gray.png);} /* Office of Public Affairs and Communications */
+    .theme-bb-mediumgray .dept-ores a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-ores-gray.png);} /* Office of Research */
+    .theme-bb-mediumgray .dept-pres a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-pres-gray.png);} /* Office of the President */
+    .theme-bb-mediumgray .dept-prov a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-prov-gray.png);} /* Office of the Provost */
+    .theme-bb-mediumgray .dept-staf a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-staf-gray.png);} /* Office of Student Affairs */
+    .theme-bb-mediumgray .dept-urel a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-urel-gray.png);} /* Office of University Relations */
+    .theme-bb-mediumgray .dept-vpor a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-vpor-gray.png);} /* Office of the Vice President for Research */
+    .theme-bb-mediumgray .dept-intr a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-intr-gray.png);} /* Office of Internationalization */
+    .theme-bb-mediumgray .dept-spir a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-spir-gray.png);} /* Office of Strategic Planning and Institutional Research */
+    .theme-bb-mediumgray .dept-acfs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-acfs-gray.png);} /* Office of Finance */
 
   /** Title Bar **/
   .titlebar.theme-tb-gold {border-bottom:1px solid #5e4724;
@@ -1383,6 +1466,15 @@ h6 {font-size:1em;}
   (-webkit-min-device-pixel-ratio: 1.5),
   (min-resolution: 144dpi){
 
+  .dept-nd a,
+  .dept a {
+    -webkit-background-size:auto 50px;
+       -moz-background-size:auto 50px;
+         -o-background-size:auto 50px;
+            background-size:auto 50px;
+  }
+  
+  /** White Text **/
   .dept-nd a   {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-white@2x.png);}
   .dept-arch a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-arch-white@2x.png);} /* School of Architecture */
   .dept-athl a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-athl-white@2x.png);} /* Department of Athletics */
@@ -1418,13 +1510,104 @@ h6 {font-size:1em;}
 
   /** Blue Text **/
   .theme-bb-gold .dept-nd a   {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-blue@2x.png);}
+  .theme-bb-gold .dept-arch a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-arch-blue@2x.png);} /* School of Architecture */
+  .theme-bb-gold .dept-athl a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-athl-blue@2x.png);} /* Department of Athletics */
+  .theme-bb-gold .dept-auxo a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-auxo-blue@2x.png);} /* Auxiliary Operations */
+  .theme-bb-gold .dept-buso a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-buso-blue@2x.png);} /* Office of Business Operations */
+  .theme-bb-gold .dept-cams a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cams-blue@2x.png);} /* Campus Services */
+  .theme-bb-gold .dept-coal a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-coal-blue@2x.png);} /* College of Arts and Letters */
+  .theme-bb-gold .dept-cont a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cont-blue@2x.png);} /* Office of the Controller */
+  .theme-bb-gold .dept-cosc a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cosc-blue@2x.png);} /* College of Science */
+  .theme-bb-gold .dept-engr a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-engr-blue@2x.png);} /* College of Engineering */
+  .theme-bb-gold .dept-enrl a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-enrl-blue@2x.png);} /* Enrollment Division */
+  .theme-bb-gold .dept-evpo a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-evpo-blue@2x.png);} /* Office of the Executive Vice President */
+  .theme-bb-gold .dept-fdao a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-fdao-blue@2x.png);} /* Facilities Design and Operations */
+  .theme-bb-gold .dept-fyst a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-fyst-blue@2x.png);} /* First Year of Studies */
+  .theme-bb-gold .dept-genc a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-genc-blue@2x.png);} /* Office of General Council */
+  .theme-bb-gold .dept-grad a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-grad-blue@2x.png);} /* The Graduate School */
+  .theme-bb-gold .dept-hurs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-hurs-blue@2x.png);} /* Office of Human Resources */
+  .theme-bb-gold .dept-invs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-invs-blue@2x.png);} /* Investment Office */
+  .theme-bb-gold .dept-mcob a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-mcob-blue@2x.png);} /* Mendoza College of Business */
+  .theme-bb-gold .dept-meca a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-meca-blue@2x.png);} /* Office of Mission Engagement and Church Affairs */
+  .theme-bb-gold .dept-laws a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-laws-blue@2x.png);} /* The Law School */
+  .theme-bb-gold .dept-ooit a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-ooit-blue@2x.png);} /* Office of Information Technologies */
+  .theme-bb-gold .dept-opac a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-opac-blue@2x.png);} /* Office of Public Affairs and Communications */
+  .theme-bb-gold .dept-ores a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-ores-blue@2x.png);} /* Office of Research */
+  .theme-bb-gold .dept-pres a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-pres-blue@2x.png);} /* Office of the President */
+  .theme-bb-gold .dept-prov a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-prov-blue@2x.png);} /* Office of the Provost */
+  .theme-bb-gold .dept-staf a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-staf-blue@2x.png);} /* Office of Student Affairs */
+  .theme-bb-gold .dept-urel a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-urel-blue@2x.png);} /* Office of University Relations */
+  .theme-bb-gold .dept-vpor a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-vpor-blue@2x.png);} /* Office of the Vice President for Research */
+  .theme-bb-gold .dept-intr a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-intr-blue@2x.png);} /* Office of Internationalization */
   .theme-bb-gold .dept-spir a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-spir-blue@2x.png);} /* Office of Strategic Planning and Institutional Research */
+  .theme-bb-gold .dept-acfs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-acfs-blue@2x.png);} /* Office of Finance */
 
   /** Gray Text **/
-  .theme-bb-lightgray .dept-nd a,
-  .theme-bb-mediumgray .dept-nd a   {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-gray@2x.png);}
-  .theme-bb-lightgray .dept-spir a,
+  .theme-bb-lightgray .dept-nd a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-gray@2x.png);}
+  .theme-bb-lightgray .dept-arch a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-arch-gray@2x.png);} /* School of Architecture */
+  .theme-bb-lightgray .dept-athl a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-athl-gray@2x.png);} /* Department of Athletics */
+  .theme-bb-lightgray .dept-auxo a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-auxo-gray@2x.png);} /* Auxiliary Operations */
+  .theme-bb-lightgray .dept-buso a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-buso-gray@2x.png);} /* Office of Business Operations */
+  .theme-bb-lightgray .dept-cams a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cams-gray@2x.png);} /* Campus Services */
+  .theme-bb-lightgray .dept-coal a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-coal-gray@2x.png);} /* College of Arts and Letters */
+  .theme-bb-lightgray .dept-cont a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cont-gray@2x.png);} /* Office of the Controller */
+  .theme-bb-lightgray .dept-cosc a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cosc-gray@2x.png);} /* College of Science */
+  .theme-bb-lightgray .dept-engr a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-engr-gray@2x.png);} /* College of Engineering */
+  .theme-bb-lightgray .dept-enrl a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-enrl-gray@2x.png);} /* Enrollment Division */
+  .theme-bb-lightgray .dept-evpo a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-evpo-gray@2x.png);} /* Office of the Executive Vice President */
+  .theme-bb-lightgray .dept-fdao a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-fdao-gray@2x.png);} /* Facilities Design and Operations */
+  .theme-bb-lightgray .dept-fyst a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-fyst-gray@2x.png);} /* First Year of Studies */
+  .theme-bb-lightgray .dept-genc a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-genc-gray@2x.png);} /* Office of General Council */
+  .theme-bb-lightgray .dept-grad a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-grad-gray@2x.png);} /* The Graduate School */
+  .theme-bb-lightgray .dept-hurs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-hurs-gray@2x.png);} /* Office of Human Resources */
+  .theme-bb-lightgray .dept-invs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-invs-gray@2x.png);} /* Investment Office */
+  .theme-bb-lightgray .dept-mcob a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-mcob-gray@2x.png);} /* Mendoza College of Business */
+  .theme-bb-lightgray .dept-meca a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-meca-gray@2x.png);} /* Office of Mission Engagement and Church Affairs */
+  .theme-bb-lightgray .dept-laws a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-laws-gray@2x.png);} /* The Law School */
+  .theme-bb-lightgray .dept-ooit a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-ooit-gray@2x.png);} /* Office of Information Technologies */
+  .theme-bb-lightgray .dept-opac a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-opac-gray@2x.png);} /* Office of Public Affairs and Communications */
+  .theme-bb-lightgray .dept-ores a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-ores-gray@2x.png);} /* Office of Research */
+  .theme-bb-lightgray .dept-pres a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-pres-gray@2x.png);} /* Office of the President */
+  .theme-bb-lightgray .dept-prov a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-prov-gray@2x.png);} /* Office of the Provost */
+  .theme-bb-lightgray .dept-staf a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-staf-gray@2x.png);} /* Office of Student Affairs */
+  .theme-bb-lightgray .dept-urel a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-urel-gray@2x.png);} /* Office of University Relations */
+  .theme-bb-lightgray .dept-vpor a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-vpor-gray@2x.png);} /* Office of the Vice President for Research */
+  .theme-bb-lightgray .dept-intr a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-intr-gray@2x.png);} /* Office of Internationalization */
+  .theme-bb-lightgray .dept-spir a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-spir-gray@2x.png);} /* Office of Strategic Planning and Institutional Research */
+  .theme-bb-lightgray .dept-acfs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-acfs-gray@2x.png);} /* Office of Finance */
+  
+  .theme-bb-mediumgray .dept-nd a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-gray@2x.png);}
+  .theme-bb-mediumgray .dept-arch a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-arch-gray@2x.png);} /* School of Architecture */
+  .theme-bb-mediumgray .dept-athl a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-athl-gray@2x.png);} /* Department of Athletics */
+  .theme-bb-mediumgray .dept-auxo a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-auxo-gray@2x.png);} /* Auxiliary Operations */
+  .theme-bb-mediumgray .dept-buso a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-buso-gray@2x.png);} /* Office of Business Operations */
+  .theme-bb-mediumgray .dept-cams a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cams-gray@2x.png);} /* Campus Services */
+  .theme-bb-mediumgray .dept-coal a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-coal-gray@2x.png);} /* College of Arts and Letters */
+  .theme-bb-mediumgray .dept-cont a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cont-gray@2x.png);} /* Office of the Controller */
+  .theme-bb-mediumgray .dept-cosc a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cosc-gray@2x.png);} /* College of Science */
+  .theme-bb-mediumgray .dept-engr a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-engr-gray@2x.png);} /* College of Engineering */
+  .theme-bb-mediumgray .dept-enrl a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-enrl-gray@2x.png);} /* Enrollment Division */
+  .theme-bb-mediumgray .dept-evpo a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-evpo-gray@2x.png);} /* Office of the Executive Vice President */
+  .theme-bb-mediumgray .dept-fdao a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-fdao-gray@2x.png);} /* Facilities Design and Operations */
+  .theme-bb-mediumgray .dept-fyst a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-fyst-gray@2x.png);} /* First Year of Studies */
+  .theme-bb-mediumgray .dept-genc a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-genc-gray@2x.png);} /* Office of General Council */
+  .theme-bb-mediumgray .dept-grad a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-grad-gray@2x.png);} /* The Graduate School */
+  .theme-bb-mediumgray .dept-hurs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-hurs-gray@2x.png);} /* Office of Human Resources */
+  .theme-bb-mediumgray .dept-invs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-invs-gray@2x.png);} /* Investment Office */
+  .theme-bb-mediumgray .dept-mcob a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-mcob-gray@2x.png);} /* Mendoza College of Business */
+  .theme-bb-mediumgray .dept-meca a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-meca-gray@2x.png);} /* Office of Mission Engagement and Church Affairs */
+  .theme-bb-mediumgray .dept-laws a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-laws-gray@2x.png);} /* The Law School */
+  .theme-bb-mediumgray .dept-ooit a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-ooit-gray@2x.png);} /* Office of Information Technologies */
+  .theme-bb-mediumgray .dept-opac a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-opac-gray@2x.png);} /* Office of Public Affairs and Communications */
+  .theme-bb-mediumgray .dept-ores a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-ores-gray@2x.png);} /* Office of Research */
+  .theme-bb-mediumgray .dept-pres a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-pres-gray@2x.png);} /* Office of the President */
+  .theme-bb-mediumgray .dept-prov a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-prov-gray@2x.png);} /* Office of the Provost */
+  .theme-bb-mediumgray .dept-staf a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-staf-gray@2x.png);} /* Office of Student Affairs */
+  .theme-bb-mediumgray .dept-urel a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-urel-gray@2x.png);} /* Office of University Relations */
+  .theme-bb-mediumgray .dept-vpor a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-vpor-gray@2x.png);} /* Office of the Vice President for Research */
+  .theme-bb-mediumgray .dept-intr a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-intr-gray@2x.png);} /* Office of Internationalization */
   .theme-bb-mediumgray .dept-spir a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-spir-gray@2x.png);} /* Office of Strategic Planning and Institutional Research */
+  .theme-bb-mediumgray .dept-acfs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-acfs-gray@2x.png);} /* Office of Finance */
 
 }
 

@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 8]>      <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
     <title><%= content_for?(:title) ? yield(:title) : "ND Foundation" %></title>
@@ -27,25 +29,24 @@
     
     <header id="header" role="banner" class="site-header">
       <nav class="brandbar theme-bb-blue">
-        <ul>
-          <li class="dept-nd"><a href="http://www.nd.edu">University <i>of</i> Notre Dame</a></li>
-          <li class="dept dept-opac"><a href="http://opac.nd.edu">Office <i>of</i> Public Affairs <i>and</i> Communications</a></li>
-        </ul>
+        <div class="row">
+          <ul class="large-12 columns">
+            <li class="dept-nd"><a href="http://www.nd.edu">University <i>of</i> Notre Dame</a></li>
+            <li class="dept dept-ooit"><a href="http://oit.nd.edu">Office <i>of</i> Information Technologies</a></li>
+          </ul>
+        </div>
       </nav>
-      <div class="titlebar theme-tb-gold {{ subhead }}">
-        <h1 class="site-title"><a href="/" accesskey="H">{{ this.site.name }}</a></h1>
-        <div class="header-util">
-          <form method="get" action="/search/" role="search" id="search" class="search-form"><input type="hidden" name="as_sitesearch" value="{{ this.site.domain }}"><input type="hidden" name="entqr" value="3"><label for="search-input">Search</label><input type="search" name="q" id="search-input" class="search-input" placeholder="Search"><button type="submit" class="search-button" data-icon="&#64;">Search</button></form>
-          <nav>
-            <ul>
-              <!-- <li><a href="/contact/">Contact</a></li> -->
-              <li class="menu-skip"><a href="#nav">Menu</a></li>
-              <li class="search-toggle"><a href="#search">Search</a></li>
-            </ul>
-          </nav>
-        </div><!-- .header-util -->
+      <div class="titlebar theme-tb-gold">
+        <div class="row">
+          <div class="large-12 columns">
+            <h1 class="site-title"><a href="/" accesskey="H">ND Foundation</a></h1>
+            <div class="header-util">
+              <form method="get" action="/search/" role="search" id="search" class="search-form"><input type="hidden" name="as_sitesearch" value="{{ this.site.domain }}"><input type="hidden" name="entqr" value="3"><label for="search-input">Search</label><input type="search" name="q" id="search-input" class="search-input" placeholder="Search"><button type="submit" class="search-button" data-icon="&#64;">Search</button></form>
+            </div><!-- .header-util -->
+          </div>
+        </div>
       </div><!-- .titlebar -->
-      <nav id="topnav" class="topnav" role="navigation"></nav>
+      <%= render "top_bar" %>
     </header>
     
     <main id="content" class="site-content" role="main">
@@ -53,20 +54,24 @@
     </main>
   
     <footer id="footer" class="site-footer row" role="contentinfo">
-      <div class="large-12 vcard">
-      <p class="copyright url fn org">
-        <a href="http://www.nd.edu/copyright/">Copyright</a> &copy; <%= Time.now.year %>
-        <a href="http://www.nd.edu" class="org">University of Notre Dame</a>
-        <a href="/" class="site-link url fn">ND Foundation</a>
-      </p>
-      <p class="contact-info adr">
-        <span class="address"><span class="street-address">502 Grace Hall</span>, <span class="locality">Notre Dame</span>, <span class="region" title="Indiana">IN</span> <span class="postal-code">46556</span></span>
-        <span class="tel"><span class="type">Phone</span> 574-631-5000</span>
-        <span class="tel fax"><span class="type">Fax</span> 574-631-5000</span>
-        <span class="email"><a href="mailto:email@nd.edu">email@nd.edu</a></span>
-      </p>
-      <a href="http://www.nd.edu" class="ndmark"><img src="//www.nd.edu/assets/images/marks/blue/ndmark300.png" alt="University of Notre Dame"></a>
-    </div>
+      <div class="large-12 columns">
+        <div class="footer-inner">
+          <div class="vcard">
+            <p class="copyright url fn org">
+              <a href="http://www.nd.edu/copyright/">Copyright</a> &copy; <%= Time.now.year %>
+              <a href="http://www.nd.edu" class="org">University of Notre Dame</a>
+              <a href="/" class="site-link url fn">ND Foundation</a>
+            </p>
+            <p class="contact-info adr">
+              <span class="address"><span class="street-address">502 Grace Hall</span>, <span class="locality">Notre Dame</span>, <span class="region" title="Indiana">IN</span> <span class="postal-code">46556</span></span>
+              <span class="tel"><span class="type">Phone</span> 574-631-5000</span>
+              <span class="tel fax"><span class="type">Fax</span> 574-631-5000</span>
+              <span class="email"><a href="mailto:email@nd.edu">email@nd.edu</a></span>
+            </p>
+            <a href="http://www.nd.edu" class="ndmark"><img src="//www.nd.edu/assets/images/marks/blue/ndmark300.png" alt="University of Notre Dame"></a>
+          </div>
+        </div>
+      </div>
     </footer>
     
     <%= javascript_include_tag "application" %>

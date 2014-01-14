@@ -50,10 +50,14 @@
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: #002b5b;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
+
+// Official Brand colors
+$official-blue:#002b5b;
+$official-gold:#dcb439;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
@@ -990,4 +994,487 @@
 // Sticky Class
 // $topbar-sticky-class: ".sticky";
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
+
+/* Fonts
+   ----------------------------------------------------*/
+@font-face {font-family:NDIcons;
+  src:url('//www.nd.edu/assets/fonts/nd.v2.eot');
+  src:url('//www.nd.edu/assets/fonts/nd.v2.eot?iefix') format('embedded-opentype'),
+      url('//www.nd.edu/assets/fonts/nd.v2.woff') format('woff'),
+      url('//www.nd.edu/assets/fonts/nd.v2.ttf') format('truetype'),
+      url('//www.nd.edu/assets/fonts/nd.v2.svg') format('svg');
+}
+@font-face {font-family:GPC; font-weight:300; font-style:normal;
+  src:url('//www.nd.edu/assets/fonts/GalaxiePolarisCondensed-Book.min.eot');
+  src:url('//www.nd.edu/assets/fonts/GalaxiePolarisCondensed-Book.min.eot?iefix') format('embedded-opentype'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolarisCondensed-Book.min.woff') format('woff'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolarisCondensed-Book.min.ttf') format('truetype');
+}
+@font-face {font-family:GPC; font-weight:400; font-style:normal;
+  src:url('//www.nd.edu/assets/fonts/GalaxiePolarisCondensed-Medium.min.eot');
+  src:url('//www.nd.edu/assets/fonts/GalaxiePolarisCondensed-Medium.min.eot?iefix') format('embedded-opentype'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolarisCondensed-Medium.min.woff') format('woff'),
+      url('//www.nd.edu/assets/fonts/GalaxiePolarisCondensed-Medium.min.ttf') format('truetype');
+}
+      
 @import 'foundation';
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow:$shadow;
+     -moz-box-shadow:$shadow;
+          box-shadow:$shadow;
+}
+
+a {color:#004da3; outline:none; -webkit-tap-highlight-color:rgba(220,179,57,.9);}
+a:hover {color:#002b5b}
+a:active {color:#aa272f;}
+a:focus {outline:thin dotted;}
+
+h1,h2,h3,h4,h5,h6 {color:#002b5b; font-weight:300; text-shadow:0 1px rgba(255,255,255,0.6); text-rendering:optimizeLegibility; font-family:GPC, "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {text-decoration:none; color:#333;}
+h1 a:visited,h2 a:visited,h3 a:visited,h4 a:visited,h5 a:visited,h6 a:visited {color:#004da3;}
+h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover {text-decoration:underline;}
+h1 {margin-top:0; font-size:2em;}
+h2 {font-size:1.75em;}
+h3 {font-size:1.563em;}
+h4 {font-size:1.375em;}
+h5 {font-size:1.188em;}
+h6 {font-size:1em;}
+
+.skip-links {border:0; clip:rect(0 0 0 0); height:1px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px;}
+.skip-links:active, .skip-links:focus {clip:auto; height:auto; margin:0; overflow:visible; position:static; width:auto;}
+
+@media screen,projection {
+  /* Foundation Over-rides
+     ----------------------------------------------------*/
+  .vcard {margin:0 auto; padding:0; border:none;
+    .fn {font-weight:normal;}
+  }
+  .top-bar-wrap {background:$topbar-bg-color;}
+  .top-bar h1,
+  .top-bar h2,
+  .top-bar h3,
+  .top-bar h4,
+  .top-bar h5,
+  .top-bar h6 {text-shadow:none;}
+
+
+  /* HEADER
+     ----------------------------------------------------*/
+  .site-header {margin:0; text-align:center;}
+  .brandbar,
+  .titlebar {overflow:hidden;}
+  .brandbar {
+    ul {margin:0; list-style:none;}
+    li {margin:0;}
+  }
+  .dept {display:none; border-top: 1px solid  #000; @include box-shadow(0 1px 0 rgba(0,122,217,0.4) inset);}
+  .site-header li {margin:0; padding:0;}
+  .brandbar a {display:block;  margin:0 auto; text-decoration:none; height:50px; text-indent:-9999px; overflow:hidden; background-repeat:no-repeat;}
+  .dept-nd img {display:none;}
+    .dept-nd a {background-position:left 0;}
+    .dept a {background-position:right 0;}
+
+  .titlebar {padding:0.75em 0;}
+  .site-title {clear:both; margin:0 auto 0.5em; padding:0; line-height:1em; font-size:1.75em; font-weight:300; text-shadow:0 1px rgba(255,255,255,0.7);
+    a {display:block; border:none; color:#002b5b; text-decoration:none;}
+      a:visited {color:#002b5b;}
+      a:hover {text-decoration:none;}
+  }
+
+  .header-util {position:relative; margin:0 auto; padding:0 1em; text-align:center;}
+    .header-util form {display:inline-block; *display:inline; *zoom:1; width:auto; margin:0 auto 0.5em; padding:1px 1px 1px 4px; border:1px solid #986633; line-height:1.1em; background-color:#fff; @include radius(5px); @include box-shadow(inset 0 1px 2px rgba(0,0,0,0.3), 0 1px rgba(255,255,255,0.65));}
+    .header-util label {border:0; clip:rect(0 0 0 0); height:1px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px;}
+    .search-input[type="search"] {display:inline-block; *display:inline; *zoom:1; vertical-align:middle; width:86%; height:1.7em; margin:0; padding:0; border:none; font-family:inherit; font-size:1.2em; color:#444; -webkit-appearance:textfield; background:transparent; @include box-shadow(none);}
+    .search-input[type="search"]:focus {border-color:transparent; background:transparent; @include box-shadow(none);}
+
+    .search-button {display:inline-block; *display:inline; *zoom:1; float:right; position:relative; text-indent:-9999px; overflow:hidden; width:2em; height:2em; margin:0; padding:0; border:1px solid #adadad; cursor:pointer; @include radius(3px);
+      background-color:#d3d3d3;
+      background:-webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .9)), to(rgba(255, 255, 255, .0))), hsl(0, 0%, 65%);
+      background:-webkit-linear-gradient(top, rgba(255, 255, 255, .9), rgba(255, 255, 255, .0)), hsl(0, 0%, 65%);
+      background:   -moz-linear-gradient(top, rgba(255, 255, 255, .9), rgba(255, 255, 255, .0)), hsl(0, 0%, 65%);
+      background:        linear-gradient(top, rgba(255, 255, 255, .9), rgba(255, 255, 255, .0)), hsl(0, 0%, 65%);
+      @include single-transition(all .15s ease-in-out);
+    }
+      .lt-ie9 .search-button {background:#a5a5a5 url(/images/icons/searchmag.png) center center no-repeat;}
+    .search-button:hover {
+      border:1px solid #a9740c;
+      background:center center no-repeat #edd854;
+      background:center center no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#edd854), color-stop(100%,#cc921f));
+      background:center center no-repeat, -webkit-linear-gradient(top, #edd854 0%,#cc921f 100%);
+      background:center center no-repeat,    -moz-linear-gradient(top, #edd854 0%,#cc921f 100%);
+      background:center center no-repeat,         linear-gradient(top, #edd854 0%,#cc921f 100%);
+    }
+
+    .search-button:active {
+      background: center center no-repeat #cc921f;
+      background: center center no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cc921f), color-stop(100%,#edd854));
+      background: center center no-repeat, -webkit-linear-gradient(top, #cc921f 0%,#edd854 100%);
+      background: center center no-repeat,    -moz-linear-gradient(top, #cc921f 0%,#edd854 100%);
+      background: center center no-repeat,         linear-gradient(top, #cc921f 0%,#edd854 100%);
+    }
+    .search-button:before { content:attr(data-icon); display:block; position:absolute; top:0; left:0.1em; color:#444; font-size:1.6em; line-height:1.3em; font-family:NDIcons; text-indent:0; text-shadow:0 1px #eee; }
+      .lt-ie9 .search-button:before {content:'';}
+    .search-button:hover:before { color:#002b5b; text-shadow:0 1px rgba(255,255,255,0.6); }
+    .search-button:active:before { text-shadow:0 -1px rgba(255,255,255,0.6); }
+
+  .header-util nav ul {margin:0.4em 0 0; text-align:center; line-height:1em;}
+  .header-util nav li {display:inline-block; *display:inline; *zoom:1; width:32%;}
+  .header-util nav a { display:block; padding:.625em; color:#002b5b; font-family:"HelveticaNeue",Helvetica,Arial,sans-serif; font-weight:bold; text-decoration:none; text-shadow:0 1px rgba(255,255,255,.9); border:1px solid #562e07; @include radius(3px);
+    @include box-shadow(0 1px rgba(255,255,255,.4) inset, 0 1px 2px rgba(0,0,0,.3), 0 0 4px rgba(82,31,0,.4) inset);
+    background-color:#dcb439;
+    background-image:-webkit-radial-gradient(50% 20%, rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 100%);
+    background-image:   -moz-radial-gradient(50% 20%, rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 100%);
+    background-image:        radial-gradient(50% 20%, rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 100%);
+  }
+  .header-util nav a:hover { color:#fff; text-shadow:0 -1px rgba(0,0,0,.9); border:1px solid #001834;
+    @include box-shadow(0 1px rgba(0,83,176,.8) inset, 0 1px 2px rgba(0,0,0,.3));
+    background-color:#002b5b;
+    background-image:-webkit-radial-gradient(50% 20%, rgba(0,83,176,1) 0%, rgba(0,83,176,0) 100%);
+    background-image:   -moz-radial-gradient(50% 20%, rgba(0,83,176,1) 0%, rgba(0,83,176,0) 100%);
+    background-image:        radial-gradient(50% 20%, rgba(0,83,176,1) 0%, rgba(0,83,176,0) 100%);        
+  }
+
+  /* CONTENT
+     ----------------------------------------------------*/
+  .site-content {padding-top:1em;}
+  .page-title {margin:0 0 .5em; padding:0 0 0.15em; border-bottom:2px solid #dcb439;}
+  
+  /* FOOTER
+     ----------------------------------------------------*/
+  .site-footer {position:relative; clear:both; text-align:center;
+    .footer-inner {position:relative; padding-top:2em; padding-bottom:2em; border-top:1px solid #ccc; @include box-shadow(inset 0 1px 0 rgba(255,255,255,0.9));}
+  }
+    .vcard .fn,
+    .site-footer p { font-size:14px; }
+  .site-info {margin:1em 0;
+    li {display:inline-block; *display:inline; *zoom:1; margin:0 2%;}
+    a {text-decoration:underline;}
+  }
+  .geo,
+  .country-name {border:0; clip:rect(0 0 0 0); height:1px; margin:-1px; overflow:hidden; padding:0; position:absolute; width:1px;}
+  .address {display:block; margin:1em 0 0;}
+  .org,
+  .tel {display:block;}
+  .ndmark {display:block; width:200px; margin:2em auto;}
+  
+}
+
+/* Medium
+   ----------------------------------------------------*/
+@media #{$medium-up} {
+
+  h1 {font-size:2.313em;}
+  h2 {font-size:2.063em;}
+  h3 {font-size:1.75em;}
+  h4 {font-size:1.625em;}
+  h5 {font-size:1.375em;}
+  h6 {font-size:1.125em;}
+
+  blockquote {margin:2em;}
+  blockquote.pull {float:right; width:30%;}
+
+  .site-header {text-align:left;}
+  .brandbar,
+  .titlebar {padding:0;}
+  .dept-nd a {float:left; height:50px;}
+  .dept {border-top:0 none; @include box-shadow(none);}
+  .dept a {float:right; height:50px;}
+  .site-title {float:left; margin:0; padding:0; font-size:2.5em;
+    a {padding:0.65em 0 0.75em;}
+  }
+  .search-input[type="search"] {width:auto; font-size:0.8em;}
+
+  .header-util {float:right; top:2.2em; margin:0; padding:0; text-align:right;
+    form {width:auto; margin:0;}
+    nav {display:block; margin:3px 0;}
+    nav ul {margin:0;}
+    nav li {width:auto; display:block; text-align:right;}
+    nav a {font-size:0.825em; font-weight:normal;}
+    nav a,
+    nav a:hover { display:inline; padding:0; border:0 none; background:none;
+        -webkit-box-shadow:0 0 rgba(255,255,255,0) inset, 0 0 rgba(0,0,0,0);
+           -moz-box-shadow:0 0 rgba(255,255,255,0) inset, 0 0 rgba(0,0,0,0);
+                box-shadow:0 0 rgba(255,255,255,0) inset, 0 0 rgba(0,0,0,0);
+    }
+    nav a:hover { color:#002b5b; text-decoration:underline; text-shadow:0 1px rgba(255,255,255,.9); }
+    .menu-skip,
+    .search-toggle {display:none;}
+  }
+    .search-button {width:23px; height:23px;}
+      .search-button:before {top:0; left:2px; font-size:18px;}
+
+  /* Footer */
+  .site-footer {padding-top:2em; text-align:left;}
+    .contact-info {margin:0;}
+    .address {margin:0;}
+    .ndmark {position:absolute; right:0; top:2em; margin:0;}
+    .site-link {display:block;}
+    .org {display:inline;}
+}
+
+/* 800px
+   ----------------------------------------------------*/
+@media only screen and (min-width:50em) {
+  .dept {display:block;} /* Adjust when the department title appears depending on the width of the graphic */
+}
+
+/* Large
+   ----------------------------------------------------*/
+/*@media only screen and (min-width:60em) {*/
+@media #{$large-up} {
+  .site-content {padding-top:2em;}
+  .site-link,
+  .org,
+  .tel {display:inline-block; *display:inline; *zoom:1; margin:0 1em 0 0;}
+}
+
+/*************************************************************************************
+ * 4. Themes
+ ************************************************************************************/
+@media screen,projection {
+
+  /** Brand Bar **/
+  /** White Text **/
+  .dept-nd a   {width:301px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-white.png);}
+  .dept-arch a {width:287px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-arch-white.png);} /* School of Architecture */
+  .dept-athl a {width:288px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-athl-white.png);} /* Department of Athletics */
+  .dept-auxo a {width:254px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-auxo-white.png);} /* Auxiliary Operations */
+  .dept-buso a {width:357px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-buso-white.png);} /* Office of Business Operations */
+  .dept-cams a {width:195px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-cams-white.png);} /* Campus Services */
+  .dept-coal a {width:316px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-coal-white.png);} /* College of Arts and Letters */
+  .dept-cont a {width:274px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-cont-white.png);} /* Office of the Controller */
+  .dept-cosc a {width:218px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-cosc-white.png);} /* College of Science */
+  .dept-engr a {width:285px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-engr-white.png);} /* College of Engineering */
+  .dept-enrl a {width:253px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-enrl-white.png);} /* Enrollment Division */
+  .dept-evpo a {width:450px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-evpo-white.png);} /* Office of the Executive Vice President */
+  .dept-fdao a {width:381px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-fdao-white.png);} /* Facilities Design and Operations */
+  .dept-fyst a {width:252px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-fyst-white.png);} /* First Year of Studies */
+  .dept-genc a {width:321px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-genc-white.png);} /* Office of General Council */
+  .dept-grad a {width:244px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-grad-white.png);} /* The Graduate School */
+  .dept-hurs a {width:323px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-hurs-white.png);} /* Office of Human Resources */
+  .dept-invs a {width:231px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-invs-white.png);} /* Investment Office */
+  .dept-mcob a {width:352px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-mcob-white.png);} /* Mendoza College of Business */
+  .dept-meca a {width:565px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-meca-white.png);} /* Office of Mission Engagement and Church Affairs */
+  .dept-laws a {width:170px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-laws-white.png);} /* The Law School */
+  .dept-ooit a {width:444px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-ooit-white.png);} /* Office of Information Technologies */
+  .dept-opac a {width:525px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-opac-white.png);} /* Office of Public Affairs and Communications */
+  .dept-ores a {width:223px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-ores-white.png);} /* Office of Research */
+  .dept-pres a {width:258px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-pres-white.png);} /* Office of the President */
+  .dept-prov a {width:235px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-prov-white.png);} /* Office of the Provost */
+  .dept-staf a {width:313px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-staf-white.png);} /* Office of Student Affairs */
+  .dept-urel a {width:375px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-urel-white.png);} /* Office of University Relations */
+  .dept-vpor a {width:466px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-vpor-white.png);} /* Office of the Vice President for Research */
+  .dept-intr a {width:380px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-intr-white.png);} /* Office of Internationalization */
+  .dept-spir a {width:556px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-spir-white.png);} /* Office of Strategic Planning and Institutional Research */
+  .dept-acfs a {width:202px; background-image:url(//www.nd.edu/assets/images/brandbar/dept-acfs-white.png);} /* Office of Finance */
+
+  .brandbar.theme-bb-blue {border-bottom:1px solid #001227;
+    @include box-shadow(0 1px #007ad9 inset, 0 -12px 3px -10px rgba(0,0,0,0.4) inset);
+    background:#002b5b url(images/texture-checkers-lightblue50.png) 0 0 repeat;
+    background:-webkit-linear-gradient(top, #003b7c 0%, #001227 100%);
+    background:   -moz-linear-gradient(top, #003b7c 0%, #001227 100%);
+    background:        linear-gradient(top, #003b7c 0%, #001227 100%);
+  }
+  .brandbar.theme-bb-gold { border-bottom:1px solid #600;
+    @include box-shadow(0 1px #fff inset, 0 -5px 6px -4px rgba(120,0,100,0.8) inset, 0 1px 5px rgba(0,0,0,0.3));
+    background:#dcb439 url(images/texture-gold.png) 0 0 repeat;
+    background:-webkit-linear-gradient(top, rgba(247,234,179,0.8) 0%, rgba(247,234,179,0.3) 50%, rgba(247,234,179,0.2) 51%, rgba(247,234,179,0) 100%), url(images/texture-gold.png);
+    background:   -moz-linear-gradient(top, rgba(247,234,179,0.8) 0%, rgba(247,234,179,0.3) 50%, rgba(247,234,179,0.2) 51%, rgba(247,234,179,0) 100%), url(images/texture-gold.png);
+    background:        linear-gradient(top, rgba(247,234,179,0.8) 0%, rgba(247,234,179,0.3) 50%, rgba(247,234,179,0.2) 51%, rgba(247,234,179,0) 100%), url(images/texture-gold.png);
+  }
+  .brandbar.theme-bb-lightgray {
+    @include box-shadow(0 1px #777, inset 0 1px rgba(0,0,0,.5), inset 0 2px rgba(255,255,255,.6), inset 0 -1px rgba(255,255,255,.2));
+    background:#f0f0f0;
+    background-image:-webkit-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%),-webkit-linear-gradient(-90deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.3) 52%, rgba(255,255,255,0.2) 53%, rgba(255,255,255,0) 100%), url(images/noise3.png);
+    background-image:   -moz-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%),   -moz-linear-gradient(-90deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.3) 52%, rgba(255,255,255,0.2) 53%, rgba(255,255,255,0) 100%), url(images/noise3.png);
+    background-image:    -ms-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%),    -ms-linear-gradient(-90deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.3) 52%, rgba(255,255,255,0.2) 53%, rgba(255,255,255,0) 100%), url(images/noise3.png);
+    background-image:     -o-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%),     -o-linear-gradient(-90deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.3) 52%, rgba(255,255,255,0.2) 53%, rgba(255,255,255,0) 100%), url(images/noise3.png);
+    background-image:       linear-gradient(-180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%),       linear-gradient(-180deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.3) 52%, rgba(255,255,255,0.2) 53%, rgba(255,255,255,0) 100%), url(images/noise3.png);
+  }
+
+  .brandbar.theme-bb-mediumgray {
+    @include box-shadow(0 1px 0 0 #000, inset 0px 1px 0px 0px rgba(0,0,0,0.50), inset 0 2px 0 0 rgba(255,255,255,0.60), inset 0px -1px 0px 0px rgba(255,255,255,0.20));
+    background:#bbb;
+    background-image:-webkit-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.06) 52%, rgba(0,0,0,0.12) 54%, rgba(0,0,0,0.3) 100%), -webkit-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%), url(images/noise4.png);
+    background-image:   -moz-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.06) 52%, rgba(0,0,0,0.12) 54%, rgba(0,0,0,0.3) 100%),    -moz-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%), url(images/noise4.png);
+    background-image:    -ms-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.06) 52%, rgba(0,0,0,0.12) 54%, rgba(0,0,0,0.3) 100%),     -ms-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%), url(images/noise4.png);
+    background-image:     -o-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.06) 52%, rgba(0,0,0,0.12) 54%, rgba(0,0,0,0.3) 100%),      -o-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%), url(images/noise4.png);
+    background-image:       linear-gradient(-180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.06) 52%, rgba(0,0,0,0.12) 54%, rgba(0,0,0,0.3) 100%),        linear-gradient(-180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%), url(images/noise4.png);
+  }
+
+  .brandbar.theme-bb-darkgray { position:relative; z-index:1;
+    @include box-shadow(inset 0 2px rgba(255,255,255,.2), inset 0 -1px rgba(255,255,255,.1), inset 0 1px #222);
+    background:#555;
+    background-image:-webkit-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%), -webkit-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 52%, rgba(0,0,0,0.2) 54%, rgba(0,0,0,0.5) 100%), url(images/noise5.png);
+    background-image:   -moz-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%),    -moz-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 52%, rgba(0,0,0,0.2) 54%, rgba(0,0,0,0.5) 100%), url(images/noise5.png);
+    background-image:    -ms-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%),     -ms-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 52%, rgba(0,0,0,0.2) 54%, rgba(0,0,0,0.5) 100%), url(images/noise5.png);
+    background-image:     -o-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%),      -o-linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 52%, rgba(0,0,0,0.2) 54%, rgba(0,0,0,0.5) 100%), url(images/noise5.png);
+    background-image:        linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%),        linear-gradient(-180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 52%, rgba(0,0,0,0.2) 54%, rgba(0,0,0,0.5) 100%), url(images/noise5.png);
+  }
+  .theme-bb-gold .dept { border-top: 1px solid  #600;
+    @include box-shadow(0 1px rgba(255,255,255,.4) inset);
+  }
+
+    /** Blue Text **/
+    .theme-bb-gold .dept-nd a   {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-blue.png);}
+    .theme-bb-gold .dept-opac a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-opac-blue.png);}
+
+    /** Gray Text **/
+    .theme-bb-lightgray .dept-nd a,
+    .theme-bb-mediumgray .dept-nd a   {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-gray.png);}
+    .theme-bb-lightgray .dept-opac a,
+    .theme-bb-mediumgray .dept-opac a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-opac-gray.png);}
+
+  /** Options include "-white", "-blue", and "-gray"; Update accordingly
+    Also see Section 4: Themes
+    Examples:
+    .theme-bb-gold .dept-nd a   {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-blue.png);}
+    .theme-bb-lightgray .dept-nd a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-gray.png);}
+    .theme-bb-darkgray .dept-nd a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-white.png);}
+   **/
+
+  /** Title Bar **/
+  .titlebar.theme-tb-gold {border-bottom:1px solid #5e4724;
+    background:#dcb439 url(images/texture-gold.png) 0 0 repeat;
+    background:-webkit-linear-gradient(top, rgba(247,234,179,0.8) 0%, rgba(247,234,179,0.3) 50%, rgba(247,234,179,0.2) 51%, rgba(247,234,179,0) 100%), url(images/texture-gold.png);
+    background:   -moz-linear-gradient(top, rgba(247,234,179,0.8) 0%, rgba(247,234,179,0.3) 50%, rgba(247,234,179,0.2) 51%, rgba(247,234,179,0) 100%), url(images/texture-gold.png);
+    background:        linear-gradient(top, rgba(247,234,179,0.8) 0%, rgba(247,234,179,0.3) 50%, rgba(247,234,179,0.2) 51%, rgba(247,234,179,0) 100%), url(images/texture-gold.png);
+    @include box-shadow(0 1px #fff inset, 0 -5px 6px -4px rgba(120,0,100,0.8) inset, 0 1px 5px rgba(0,0,0,0.3));
+  }
+  .titlebar.theme-tb-blue { border-bottom:1px solid #000;
+    background:#002b5b;
+    background:-webkit-linear-gradient(top, #003b7c 0%, #002b5b 100%);
+    background:   -moz-linear-gradient(top, #003b7c 0%, #002b5b 100%);
+    background:        linear-gradient(top, #003b7c 0%, #002b5b 100%);
+    @include box-shadow(0 1px #007ad9 inset, 0 -12px 3px -10px rgba(0,0,0,0.4) inset);
+  }
+  .titlebar.theme-tb-gold2 { border-bottom:1px solid #5e4724;
+    @include box-shadow(0 -5px 6px -4px rgba(120,0,100,0.8) inset, 0 5px 5px -4px rgba(120,0,100,0.6) inset, 0 2px 5px -4px rgba(0,0,0,.4) inset, 0 1px 5px rgba(0,0,0,0.3));
+    background:#dcb439 url(images/texture-gold.png) 0 0 repeat;
+    background:url(images/noise3.png), -webkit-linear-gradient(top, #e8d343 0%, #bc7a15 100%);
+    background:url(images/noise3.png),    -moz-linear-gradient(top, #e8d343 0%, #bc7a15 100%);
+    background:url(images/noise3.png),         linear-gradient(top, #e8d343 0%, #bc7a15 100%);
+  }
+  .theme-tb-blue .site-title a {color:#fff; text-shadow:0 -1px rgba(0,0,0,.8);}
+
+  .theme-tb-blue .header-util form { border-color:#000;
+    @include box-shadow(inset 0 1px 2px rgba(0,0,0,.3), 0 1px rgba(0,120,255,.5));
+  }
+
+}
+
+/* 700px
+   ----------------------------------------------------*/
+@media only screen and (min-width:43.75em) {
+  .theme-tb-blue .header-util a,
+  .theme-tb-blue .header-util a:hover {color:#fff; text-shadow:0 1px rgba(0,0,0,.9);}
+}
+
+/* 920px
+   ----------------------------------------------------*/
+@media only screen and (min-width:57.5em) {
+  .theme-bb-gold .dept {border-top:0 none; @include box-shadow(none);}
+}
+
+/* Hi-res
+   ----------------------------------------------------*/
+@media
+  (-webkit-min-device-pixel-ratio: 1.5),
+  (min-resolution: 144dpi){
+
+  .dept-nd a   {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-white@2x.png);}
+  .dept-arch a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-arch-white@2x.png);} /* School of Architecture */
+  .dept-athl a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-athl-white@2x.png);} /* Department of Athletics */
+  .dept-auxo a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-auxo-white@2x.png);} /* Auxiliary Operations */
+  .dept-buso a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-buso-white@2x.png);} /* Office of Business Operations */
+  .dept-cams a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cams-white@2x.png);} /* Campus Services */
+  .dept-coal a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-coal-white@2x.png);} /* College of Arts and Letters */
+  .dept-cont a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cont-white@2x.png);} /* Office of the Controller */
+  .dept-cosc a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-cosc-white@2x.png);} /* College of Science */
+  .dept-engr a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-engr-white@2x.png);} /* College of Engineering */
+  .dept-enrl a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-enrl-white@2x.png);} /* Enrollment Division */
+  .dept-evpo a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-evpo-white@2x.png);} /* Office of the Executive Vice President */
+  .dept-fdao a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-fdao-white@2x.png);} /* Facilities Design and Operations */
+  .dept-fyst a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-fyst-white@2x.png);} /* First Year of Studies */
+  .dept-genc a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-genc-white@2x.png);} /* Office of General Council */
+  .dept-grad a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-grad-white@2x.png);} /* The Graduate School */
+  .dept-hurs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-hurs-white@2x.png);} /* Office of Human Resources */
+  .dept-invs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-invs-white@2x.png);} /* Investment Office */
+  .dept-mcob a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-mcob-white@2x.png);} /* Mendoza College of Business */
+  .dept-meca a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-meca-white@2x.png);} /* Office of Mission Engagement and Church Affairs */
+  .dept-laws a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-laws-white@2x.png);} /* The Law School */
+  .dept-ooit a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-ooit-white@2x.png);} /* Office of Information Technologies */
+  .dept-opac a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-opac-white@2x.png);} /* Office of Public Affairs and Communications */
+  .dept-ores a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-ores-white@2x.png);} /* Office of Research */
+  .dept-pres a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-pres-white@2x.png);} /* Office of the President */
+  .dept-prov a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-prov-white@2x.png);} /* Office of the Provost */
+  .dept-staf a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-staf-white@2x.png);} /* Office of Student Affairs */
+  .dept-urel a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-urel-white@2x.png);} /* Office of University Relations */
+  .dept-vpor a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-vpor-white@2x.png);} /* Office of the Vice President for Research */
+  .dept-intr a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-intr-white@2x.png);} /* Office of Internationalization */
+  .dept-spir a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-spir-white@2x.png);} /* Office of Strategic Planning and Institutional Research */
+  .dept-acfs a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-acfs-white@2x.png);} /* Office of Finance */
+
+  /** Blue Text **/
+  .theme-bb-gold .dept-nd a   {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-blue@2x.png);}
+  .theme-bb-gold .dept-spir a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-spir-blue@2x.png);} /* Office of Strategic Planning and Institutional Research */
+
+  /** Gray Text **/
+  .theme-bb-lightgray .dept-nd a,
+  .theme-bb-mediumgray .dept-nd a   {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-gray@2x.png);}
+  .theme-bb-lightgray .dept-spir a,
+  .theme-bb-mediumgray .dept-spir a {background-image:url(//www.nd.edu/assets/images/brandbar/dept-spir-gray@2x.png);} /* Office of Strategic Planning and Institutional Research */
+
+}
+
+/*************************************************************************************
+ * Print Styles
+ ************************************************************************************/
+@media print {
+
+  @page {margin:0.5cm;}
+  body {font-family:Georgia, "Times New Roman", Times, serif; color:#000;}
+  img, tr {page-break-inside:avoid;}
+  p, h2, h3 {orphans:3; widows:3;}
+  h2, h3 {page-break-after:avoid;}
+
+  /* Styles
+     ----------------------------------------------------*/
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {content:"";}
+  .ndmark {width:150px;}
+
+  /* HIDDEN
+     ----------------------------------------------------*/
+  .breadcrumbs,
+  .header-util,
+  .skip-links,
+  .site-nav {display:none;}
+
+  /* STRUCTURE
+     ----------------------------------------------------*/
+  .site-header {overflow:hidden; position:relative; margin:0 0 20px; padding:0 0 20px; border-bottom:1px solid gray;}
+    .dept-nd {text-indent:-100%; white-space:nowrap; overflow:hidden;}
+    .site-header .ndmark {position:absolute; bottom:20px; right:0;}
+    .site-header li,
+    .site-title,
+    .subline {margin:0; font-family:Georgia, "Times New Roman", Times, serif;}
+    .site-header li a,
+    .site-title a,
+    .subline a {color:#000;}
+
+    .dept {font-size:0.8em;}
+    .site-title {margin:4px 0 2px; font-size:2em;}
+    .subline {font-size:1em;}
+
+  .site-content a:link:after {content:" [link: " attr(href) "] "; font-size:11px; font-family:inherit;}
+  .site-content abbr:after {content:" (" attr(title) ")";}
+
+  .site-footer {position:relative; clear:both; margin:20px 0 0; padding:20px 0 0; border-top:1px solid gray;}
+    .geo,
+    .country-name {display:none;}
+    .tel {display:block;}
+    .site-footer .ndmark {position:absolute; top:20px; right:0;}
+
+}

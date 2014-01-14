@@ -28,4 +28,4 @@ The title bar comes in several options. The default is Gold as designated by the
 
 ## Top Bar
 
-Foundation include a navigation/utility bar called the "Top Bar"(http://foundation.zurb.com/docs/components/topbar.html). It's stored as a partial in this project and is located in the <header> in "application.html.erb". Remove if not needed.
+Foundation include a navigation/utility bar called the [Top Bar](http://foundation.zurb.com/docs/components/topbar.html). It's stored as a partial in this project and is located in the `<header>` in "application.html.erb". Remove if not needed.

@@ -1,6 +1,6 @@
 # README
 
-The purpose of this project is to provide Notre Dame branded styles for Zurb Foundation.
+The purpose of this project is to provide Notre Dame branded styles for [Zurb Foundation](http://foundation.zurb.com/). To get started, check out [http://foundation.zurb.com/docs](http://foundation.zurb.com/docs).
 
 ## Brand Bar
 
@@ -29,3 +29,7 @@ The title bar comes in several options. The default is Gold as designated by the
 ## Top Bar
 
 Foundation include a navigation/utility bar called the [Top Bar](http://foundation.zurb.com/docs/components/topbar.html). It's stored as a partial in this project and is located in the `<header>` in "application.html.erb". Remove if not needed.
+  
+## Junk Drawer
+
+Provided by and maintained by [Marketing Communications: Web](http://marcomm.nd.edu/web/)

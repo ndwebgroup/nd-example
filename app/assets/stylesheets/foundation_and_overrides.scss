@@ -1019,6 +1019,13 @@ $official-gold:#dcb439;
       
 @import 'foundation';
 
+@mixin background-size($value) {
+  -webkit-background-size:$value;
+     -moz-background-size:$value;
+       -o-background-size:$value;
+          background-size:$value;
+}
+
 @mixin box-shadow($shadow...) {
   -webkit-box-shadow:$shadow;
      -moz-box-shadow:$shadow;
@@ -1158,6 +1165,10 @@ h6 {font-size:1em;}
   .tel {display:block;}
   .ndmark {display:block; width:200px; margin:2em auto;}
   
+}
+
+@media #{$small-only} {
+  .brandbar ul {padding:0;}
 }
 
 /* Medium
@@ -1467,12 +1478,7 @@ h6 {font-size:1em;}
   (min-resolution: 144dpi){
 
   .dept-nd a,
-  .dept a {
-    -webkit-background-size:auto 50px;
-       -moz-background-size:auto 50px;
-         -o-background-size:auto 50px;
-            background-size:auto 50px;
-  }
+  .dept a {@include background-size(auto 50px);}
   
   /** White Text **/
   .dept-nd a   {background-image:url(//www.nd.edu/assets/images/brandbar/dept-nd-white@2x.png);}

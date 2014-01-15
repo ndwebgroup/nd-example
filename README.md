@@ -30,6 +30,6 @@ The title bar comes in several options. The default is Gold as designated by the
 
 Foundation include a navigation/utility bar called the [Top Bar](http://foundation.zurb.com/docs/components/topbar.html). It's stored as a partial in this project and is located in the `<header>` in "application.html.erb". Remove if not needed.
   
-## Junk Drawer
+## Copyright
 
-Provided by and maintained by [Marketing Communications: Web](http://marcomm.nd.edu/web/)
+These theme files are copyrighted, provided, and maintained by [Marketing Communications: Web](http://marcomm.nd.edu/web/). Foundation copyright by [ZURB, inc](http://zurb.com/).

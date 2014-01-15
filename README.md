@@ -32,4 +32,4 @@ Foundation include a navigation/utility bar called the [Top Bar](http://foundati
   
 ## Copyright
 
-These theme files are copyrighted, provided, and maintained by [Marketing Communications: Web](http://marcomm.nd.edu/web/). Foundation copyright by [ZURB, inc](http://zurb.com/).
+These theme files are copyrighted, provided, and maintained by [Marketing Communications: Web](http://marcomm.nd.edu/web/) and the [University of Notre Dame](http://www.nd.edu/). Foundation copyright by [ZURB, inc](http://zurb.com/).

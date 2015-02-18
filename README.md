@@ -2,7 +2,7 @@
 
 The purpose of this project is to provide Notre Dame branded styles for [Zurb Foundation](http://foundation.zurb.com/). To get started, check out [http://foundation.zurb.com/docs](http://foundation.zurb.com/docs).
 
-**[View a demo of the project](http://ndwebgroup.github.io/nd-foundation/)**.
+**[View a demo of the project](http://ndwebgroup.github.io/nd-example/)**.
 
 ## Brand Bar
 

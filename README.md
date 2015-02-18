@@ -1,6 +1,8 @@
 # README
 
-The purpose of this project is to provide Notre Dame branded styles for [Zurb Foundation](http://foundation.zurb.com/). To get started, check out [http://foundation.zurb.com/docs](http://foundation.zurb.com/docs). [View a demo of the project](http://ndwebgroup.github.io/nd-foundation/).
+The purpose of this project is to provide Notre Dame branded styles for [Zurb Foundation](http://foundation.zurb.com/). To get started, check out [http://foundation.zurb.com/docs](http://foundation.zurb.com/docs).
+
+**[View a demo of the project](http://ndwebgroup.github.io/nd-foundation/)**.
 
 ## Brand Bar
 
@@ -29,7 +31,7 @@ The title bar comes in several options. The default is Gold as designated by the
 ## Top Bar
 
 Foundation include a navigation/utility bar called the [Top Bar](http://foundation.zurb.com/docs/components/topbar.html). It's stored as a partial in this project and is located in the `<header>` in "application.html.erb". Remove if not needed.
-  
+
 ## Copyright
 
 These theme files are copyrighted, provided, and maintained by [Marketing Communications: Web](http://marcomm.nd.edu/web/) and the [University of Notre Dame](http://www.nd.edu/). Foundation copyright by [ZURB, inc](http://zurb.com/).

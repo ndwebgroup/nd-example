@@ -4,6 +4,10 @@ The purpose of this project is to provide Notre Dame branded styles for [Zurb Fo
 
 **[View a demo of the project](http://ndwebgroup.github.io/nd-example/)**.
 
+## NOTICE
+
+This theme is no longer maintained. Please use the [Bootstrap repository](https://github.com/ndwebgroup/nd_bootstrap).
+
 ## Brand Bar
 
 ### Department
